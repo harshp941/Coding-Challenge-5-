@@ -7,3 +7,14 @@ let inventory = [
     {name: "Mug" , price: 10, quantity: 7}
 ];
 
+// Task 2 Create an Orders Array of Order Objects
+let orders = [];
+
+
+// Task 3 Create a Function to Place an Order
+
+function placeOrder(orders)
+orders.push({
+    customerName: "Daniel Wig"
+
+})
