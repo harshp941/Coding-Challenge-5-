@@ -57,3 +57,12 @@ orders.push(newOrder);
 }
 console.log(placeOrder("Jake Bag", {name:"Energy Drink", quantity: 2}));
 console.log(`Order has been placed for ${customerName}`, newOrder);
+
+//Task 4 Create a Function to Calculate Total for an Order
+function calculateOrderTotal(order){
+return order.item.reduce((total,item) => {
+    let product = inventory.find(p => p.name === item.name);
+    return total + (product.price * item.quantity);
+},0);
+}
+
