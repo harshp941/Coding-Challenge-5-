@@ -31,23 +31,6 @@ itemsOrdered.forEach(item => {
     product.quantity -= item.quantity;
 });
 
-   
-   // for (let quantity in itemsOrdered) {
-   //     inventory.find(item => itemsOrdered.name === item.name);
-     //   if (!itemsOrdered) {
-       //     console.log(`Error: Item doesn't exist`);
-         //  break;
-       //}
-      //if(itemsOrdered.quantity > inventory.quantity) {
-        //    console.log(`Error: No items in stock`);
-          //  break;
-      // }
-   // }
-   // for (let quantity in itemsOrdered) {
-   //     inventory.find(item = itemsOrdered.name === item.name);
-     //  itemsOrdered.quantity -= inventory.quantity;
-   // }
-
 let newOrder = {
     customerName: customerName,
     itemsOrdered: itemsOrdered,
@@ -65,6 +48,7 @@ return order.item.reduce((total,item) => {
     return total + (product.price * item.quantity);
 },0);
 }
+console.log(calculateOrderTotal(orders[0]));
 
 //Task 5 Create a Function to Mark an Order as Completed
 function completeOrder(customerName) {{
@@ -79,4 +63,11 @@ console.log(`No order found for ${customerName}`)
 }
 console.log("Jake Bag");
 
-//Task 6 
+//Task 6 Create a Function to Check Pending Orders
+function checkPendingOrders(orders) {
+    orders.forEach(orders =>
+    {if (orders.status = "Pending") {
+
+ } } )
+};
+console.log(`Details for pending Orders${checkPendingOrders(orders)}`)
