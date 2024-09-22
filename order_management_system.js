@@ -66,3 +66,17 @@ return order.item.reduce((total,item) => {
 },0);
 }
 
+//Task 5 Create a Function to Mark an Order as Completed
+function completeOrder(customerName) {{
+    let order = orders.find(order => order.customerName === customerName && order.status === "Pending");
+    if (order) {
+        order.status = "Completed";
+        console.log(`Order for has been completed for ${customerName} `)
+    } else {
+console.log(`No order found for ${customerName}`)
+    }
+}
+}
+console.log("Jake Bag");
+
+//Task 6 
